@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML SESSION</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            display: inline-block;
+            width: 100%;
+            height: 48px;
+            background-color: #f8f8f8;
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 0;
+        }
+
+        header>img{
+            float: left;
+            padding: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f8f8f8;
+            float: right;
+            height: 100%;
+        }
+
+        li {
+            float: left;
+            height: 100%;
+        }
+
+        li a {
+            display: block;
+            color: #333;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            height: 100%;
+        }
+
+        li a:hover {
+            background-color: #111;
+            color: #f8f8f8;
+        }
+
+        div.container {
+            clear: both;
+            min-height: 800px;
+        }
+
+        div.container section {
+            display: block;
+        }
+
+        section#home {
+            height: 520px;
+            background-image: url(/images/camera-coffee-1280.jpg);
+            background-size: 1280px;
+        }
+
+        section#about{
+            padding: 30px 40px;
+            text-align: center;
+            line-height: 1.6em;
+        }
+
+        section#about img {
+            margin: 20px 10px;
+        }
+
+        section#contact {
+            display: inline-block;
+            width: 100%;
+            padding: 30px 0px;
+            text-align: center;
+            line-height: 1.6em;
+            background: #f8f8f8;
+        }
+
+        section#contact div {
+            width: 33%;
+            min-height: 220px;
+            float: left;
+            border-right: solid 1px #333;
+        }
+
+        section#contact div:last-child{
+            border-right: none;
+        }
+        footer {
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            bottom: 0;
+            padding: 2px 0;
+            background-color: #333;
+            color: #f8f8f8;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/images/logo.svg" alt="Tradition CM." width="220">
+        <ul class="navigation">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>   
+    
+
+    <div class="container">
+        <section id="home"></section>        
+        <section id="about">
+            <h3>ABOUT US</h3>
+            <p>Tradition is the interdealer broking arm of Compagnie Financière Tradition and one of the worlds largest interdealer brokers in over-the-counter financial and commodity related products. Represented in over 28 countries, Compagnie Financière Tradition is listed on the Swiss stock exchange.</p>
+            <img src="/images/about_text.png" alt="Tradition CM" height="150">
+            <img src="/images/tradition_branch.jpg" alt="Tradition CM" height="150">
+        </section>        
+        <section id="contact">
+            <h3>CONTACT US</h3>
+            <div>
+                <h5>OFFICE</h5>
+                <p>
+                    6 Sukkasem Road <br>
+                    Suthep Sub-District Mueang District <br>
+                    Chiang Mai 50200 <br>
+                    <br>
+                    ( Mon - Fri : 08:30 - 17:30 )
+                </p>
+            </div>
+            <div>
+                <h5>TELEPHONE</h5>
+                <p>053-216510</p>
+            </div>
+            <div>
+                <h5>EMAIL</h5>
+                <p>natalie.cm@traditionasia.com</p>
+            </div>
+        </section>        
+    </div>
+    <footer>
+        <p class="copyright">© TDCM 2019</p>
+    </footer>
+</body>
+</html>
